@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{7ecd06e2-3ca3-41eb-bf31-e84fc4b7463a}">
+		<property name="assetPath">
+			<value>pajaro.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>22.0499992</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>20.688979591836734</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{da833f91-221f-4b65-98c2-ad81306b13ff}</destination>
+		</relationship>
+	</object>
+</objects>
