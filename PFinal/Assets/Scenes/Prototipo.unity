@@ -1396,8 +1396,9 @@ GameObject:
   - component: {fileID: 1823306587}
   - component: {fileID: 1823306586}
   - component: {fileID: 1823306589}
+  - component: {fileID: 1823306590}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1479,7 +1480,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: -2082803764, guid: 7eb7d4859d47e89478d04512f0453a9a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1532,6 +1533,30 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1823306590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823306585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32c0f449a8dabb94993eb1516815216d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxSpeed: 7
+  _acceleration: 60
+  _groundDeceleration: 80
+  _airDeceleration: 80
+  _groundingForce: -1.5
+  _groundDistance: 0.05
+  _jumpPower: 17
+  _maxFallSpeed: 30
+  _fallAcceleration: 45
+  _jumpEarlyMultiplier: 3
+  _coyoteTime: 0.15
+  _jumpBuffer: 0.2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
