@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SoundLoop : MonoBehaviour
@@ -9,7 +7,7 @@ public class SoundLoop : MonoBehaviour
     AudioSource trafficLoopSource, chatterLoopSource;
 
     [Range(0f, 1f)]
-    public float minVol, maxVol, SourceVol;  // volumenes máximo y mínimo establecidos y volumen origintal del source
+    public float minVol, maxVol;  // volumenes máximo y mínimo establecidos y volumen origintal del source
     [Range(0f, 30f)]
     public float minTime, maxTime;  // intervalo temporal de lanzamiento
     [Range(0, 50)]

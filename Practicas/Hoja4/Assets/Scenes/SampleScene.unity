@@ -167,14 +167,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f29e79e6cb357947a06b234c57c051f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numSpeakers: 1
+  soundCategory: Chatter
   minVol: 0
   maxVol: 0.443
-  SourceVol: 0.303
+  volumeLimit: 0
   minTime: 6.7
   maxTime: 13.7
   distRand: 18
   maxDist: 13
   spatialBlend: 0.454
+  pitchVariation: 0.121
+  randomPosition: 1
+  maxPositionVariation: 28.3
   soundClips:
   - {fileID: 8300000, guid: a32ac41f3c822a444aa5372fcb681e62, type: 3}
   - {fileID: 8300000, guid: e6535a374980dd74ab8d0267aa113858, type: 3}
@@ -204,6 +209,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
+  - component: {fileID: 705507996}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -288,6 +294,102 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!82 &705507996
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,14 +526,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f29e79e6cb357947a06b234c57c051f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numSpeakers: 1
+  soundCategory: 
   minVol: 0
   maxVol: 0.557
-  SourceVol: 0.353
+  volumeLimit: 0
   minTime: 7.2
   maxTime: 14.6
   distRand: 18
   maxDist: 9
   spatialBlend: 0.35
+  pitchVariation: 0
+  randomPosition: 0
+  maxPositionVariation: 0
   soundClips:
   - {fileID: 8300000, guid: dc4b7c2b10a5e2b4f8846bea144249c7, type: 3}
   - {fileID: 8300000, guid: b30dad01f2b0609478ef6bbbc7d3bce3, type: 3}
@@ -480,14 +587,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f29e79e6cb357947a06b234c57c051f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numSpeakers: 1
+  soundCategory: 
   minVol: 0
   maxVol: 0.537
-  SourceVol: 0.358
+  volumeLimit: 0
   minTime: 5.4
   maxTime: 16.7
   distRand: 15
   maxDist: 9
   spatialBlend: 0.372
+  pitchVariation: 0
+  randomPosition: 0
+  maxPositionVariation: 0
   soundClips:
   - {fileID: 8300000, guid: 1d1b3623d3631164d836aa216e29566a, type: 3}
   - {fileID: 8300000, guid: 46f7131ffcc9575419cff10a7b2afbb9, type: 3}
@@ -541,14 +653,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f29e79e6cb357947a06b234c57c051f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numSpeakers: 1
+  soundCategory: 
   minVol: 0
   maxVol: 0.433
-  SourceVol: 0.289
+  volumeLimit: 0
   minTime: 4.5
   maxTime: 12.4
   distRand: 14
   maxDist: 9
   spatialBlend: 0.443
+  pitchVariation: 0
+  randomPosition: 0
+  maxPositionVariation: 0
   soundClips:
   - {fileID: 8300000, guid: 18c34481167c093498f3cdfb7bce9229, type: 3}
   - {fileID: 8300000, guid: 497f0d46f5679e34e9ef60a9deea2345, type: 3}
@@ -589,7 +706,6 @@ MonoBehaviour:
   trafficLoop: {fileID: 8300000, guid: 2d30982cba1d9ff419e4b64259842b22, type: 3}
   minVol: 0
   maxVol: 0.423
-  SourceVol: 0.219
   minTime: 3.1
   maxTime: 10.4
   distRand: 10
