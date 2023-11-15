@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{f9ae5ba2-bf89-4d7f-953d-7b7770d3ad06}">
+		<property name="assetPath">
+			<value>trueno2.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>9.241541950113378</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0465e50b-35c4-4968-b2c0-30ac3119cef2}</destination>
+		</relationship>
+	</object>
+</objects>

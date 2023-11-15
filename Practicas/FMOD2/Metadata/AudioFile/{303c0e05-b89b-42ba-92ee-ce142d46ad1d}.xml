@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{303c0e05-b89b-42ba-92ee-ce142d46ad1d}">
+		<property name="assetPath">
+			<value>lluvia1.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>60.929160997732424</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{0465e50b-35c4-4968-b2c0-30ac3119cef2}</destination>
+		</relationship>
+	</object>
+</objects>
