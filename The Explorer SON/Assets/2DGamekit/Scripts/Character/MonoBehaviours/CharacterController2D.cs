@@ -1,4 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using FMOD.Studio;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 namespace Gamekit2D
@@ -30,6 +33,10 @@ namespace Gamekit2D
         public Collider2D[] GroundColliders { get { return m_GroundColliders; } }
         public ContactFilter2D ContactFilter { get { return m_ContactFilter; } }
 
+        // Audio
+        EventInstance playerFootsteps;
+        EventInstance playerStoneFootsteps;
+        EventInstance playerClimb;
 
         void Awake()
         {
@@ -46,11 +53,32 @@ namespace Gamekit2D
             Physics2D.queriesStartInColliders = false;
         }
 
+        private void Start()
+        {
+            StartCoroutine(updateAudioReferences());
+            
+        }
+
+        private IEnumerator updateAudioReferences()
+        {
+            while (GameManager.Instance.audioManager == null || GameManager.Instance.fmodEvents == null)
+            {
+                yield return null;
+            }
+
+            playerFootsteps = GameManager.Instance.audioManager.CreateInstance(GameManager.Instance.fmodEvents.GetEvent("Footsteps"));
+            playerStoneFootsteps = GameManager.Instance.audioManager.CreateInstance(GameManager.Instance.fmodEvents.GetEvent("StoneFootsteps"));
+            playerClimb = GameManager.Instance.audioManager.CreateInstance(GameManager.Instance.fmodEvents.GetEvent("Climb"));
+        }
+
         void FixedUpdate()
         {
             m_PreviousPosition = m_Rigidbody2D.position;
             m_CurrentPosition = m_PreviousPosition + m_NextMovement;
             Velocity = (m_CurrentPosition - m_PreviousPosition) / Time.deltaTime;
+
+            FootstepsAudio();
+            ClimbAudio();
 
             m_Rigidbody2D.MovePosition(m_CurrentPosition);
             m_NextMovement = Vector2.zero;
@@ -219,6 +247,78 @@ namespace Gamekit2D
             for (int i = 0; i < m_HitBuffer.Length; i++)
             {
                 m_HitBuffer[i] = new RaycastHit2D();
+            }
+        }
+
+        private void FootstepsAudio()
+        {
+            bool inStoneGround = false;
+            // Check ground properties
+            RaycastHit hit;
+            float raycastDistance = 1f;
+            if (Physics.Raycast(transform.position, Vector3.down, out hit, raycastDistance))
+            {
+                if (hit.collider.gameObject.CompareTag("StoneGround"))
+                {
+                    // Dibujar la línea en el Editor
+                    Debug.DrawLine(transform.position, hit.point, Color.red);
+
+                    inStoneGround = true;
+                }
+            }
+            else
+            {
+                // Si el raycast no golpea nada, dibujar la línea hasta la distancia máxima
+                Vector3 endPoint = transform.position + Vector3.down * raycastDistance;
+                Debug.DrawLine(transform.position, endPoint, Color.green);
+            }
+
+            if (Velocity.x != 0 && IsGrounded)
+            {
+                PLAYBACK_STATE state;
+                if (inStoneGround)
+                {
+                    playerStoneFootsteps.getPlaybackState(out state);
+
+                    if (state.Equals(PLAYBACK_STATE.STOPPED))
+                    {
+                        playerStoneFootsteps.start();
+                        playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
+                    }
+                }
+                else
+                {
+                    playerFootsteps.getPlaybackState(out state);
+
+                    if (state.Equals(PLAYBACK_STATE.STOPPED))
+                    {
+                        playerFootsteps.start();
+                        playerStoneFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
+                    }
+                }
+            }
+            else
+            {
+                playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
+                playerStoneFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
+            }
+        }
+
+        public void ClimbAudio()
+        {
+            if (PlayerCharacter.Climbing.y != 0)
+            {
+                PLAYBACK_STATE state;
+                playerClimb.getPlaybackState(out state);
+
+                if (state.Equals(PLAYBACK_STATE.STOPPED))
+                {
+                    playerClimb.start();
+                }
+            }
+            else
+            {
+                playerClimb.stop(STOP_MODE.ALLOWFADEOUT);
             }
         }
     }
