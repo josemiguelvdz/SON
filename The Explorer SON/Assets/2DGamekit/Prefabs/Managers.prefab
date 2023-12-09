@@ -177,4 +177,20 @@ MonoBehaviour:
         Data3: 1138014654
         Data4: 1116318817
       Path: event:/Ambience/Ambiente
+  - name: Music
+    eventReference:
+      Guid:
+        Data1: -903501519
+        Data2: 1327914518
+        Data3: 1832203932
+        Data4: -1607367426
+      Path: event:/Music/MusicGameplay
+  - name: Dialog
+    eventReference:
+      Guid:
+        Data1: -99554190
+        Data2: 1181344706
+        Data3: 2059140769
+        Data4: -1948656551
+      Path: event:/Dialog/Voice
   emitters: []
