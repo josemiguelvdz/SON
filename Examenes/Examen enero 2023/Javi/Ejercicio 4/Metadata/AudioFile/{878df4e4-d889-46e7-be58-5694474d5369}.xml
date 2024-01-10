@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{878df4e4-d889-46e7-be58-5694474d5369}">
+		<property name="assetPath">
+			<value>escombros_2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>2</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{68f06a3c-e11d-40f9-912b-8c084ea9f8cf}</destination>
+		</relationship>
+	</object>
+</objects>

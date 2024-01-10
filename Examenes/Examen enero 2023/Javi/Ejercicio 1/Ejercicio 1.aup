@@ -1,0 +1,108 @@
+<?xml version="1.0" standalone="no" ?>
+<!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="Ejercicio 1_data" version="1.3.0" audacityversion="2.4.2" sel0="0.0000000000" sel1="20.1919004525" vpos="256" h="0.0000000000" zoom="65.6699268743" rate="22100.0" snapto="off" selectionformat="samples" frequencyformat="Hz" bandwidthformat="octaves">
+	<tags>
+		<tag name="ARTIST" value="Javier Cano Salcedo"/>
+		<tag name="TITLE" value="noche3"/>
+		<tag name="ALBUM" value="Examen SON Enero 2023"/>
+		<tag name="YEAR" value="2024"/>
+		<tag name="Software" value="Lavf58.29.100"/>
+		<tag name="TRACKNUMBER" value="3"/>
+	</tags>
+	<wavetrack name="noche" isSelected="0" height="127" minimized="0" channel="0" linked="1" mute="1" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="890462">
+				<waveblock start="0">
+					<simpleblockfile filename="e08088c9.au" len="222615" min="-0.10062" max="0.092807" rms="0.018872"/>
+				</waveblock>
+				<waveblock start="222615">
+					<simpleblockfile filename="e0808323.au" len="222616" min="-0.122772" max="0.108565" rms="0.021467"/>
+				</waveblock>
+				<waveblock start="445231">
+					<simpleblockfile filename="e0808bfa.au" len="222615" min="-0.11921" max="0.120309" rms="0.021367"/>
+				</waveblock>
+				<waveblock start="667846">
+					<simpleblockfile filename="e0808701.au" len="222616" min="-0.0839" max="0.083813" rms="0.018143"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="noche" isSelected="0" height="127" minimized="0" channel="1" linked="0" mute="1" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="890462">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808229.au" len="222615" min="-0.10488" max="0.105402" rms="0.012348"/>
+				</waveblock>
+				<waveblock start="222615">
+					<simpleblockfile filename="e080860a.au" len="222616" min="-0.111988" max="0.119857" rms="0.017884"/>
+				</waveblock>
+				<waveblock start="445231">
+					<simpleblockfile filename="e0808df5.au" len="222615" min="-0.123737" max="0.120942" rms="0.019179"/>
+				</waveblock>
+				<waveblock start="667846">
+					<simpleblockfile filename="e08081ad.au" len="222616" min="-0.123755" max="0.126636" rms="0.017164"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="noche" isSelected="0" height="132" minimized="0" channel="0" linked="1" mute="1" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="10073">
+				<waveblock start="0">
+					<simpleblockfile filename="e08089aa.au" len="10073" min="-0.063603" max="0.059037" rms="0.013145"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="noche" isSelected="0" height="132" minimized="0" channel="1" linked="0" mute="1" solo="0" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="10073">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808f9a.au" len="10073" min="-0.030851" max="0.031677" rms="0.006348"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Mezclar" isSelected="1" height="150" minimized="0" channel="0" linked="1" mute="0" solo="1" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="890462">
+				<waveblock start="0">
+					<simpleblockfile filename="e080862b.au" len="262144" min="-0.10062" max="0.092807" rms="0.019085"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0808db0.au" len="262144" min="-0.122772" max="0.120309" rms="0.022634"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="e0808e06.au" len="262144" min="-0.114008" max="0.104814" rms="0.018932"/>
+				</waveblock>
+				<waveblock start="786432">
+					<simpleblockfile filename="e080887b.au" len="104030" min="-0.0839" max="0.082047" rms="0.018247"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+	<wavetrack name="Mezclar" isSelected="1" height="150" minimized="0" channel="1" linked="0" mute="0" solo="1" rate="44100" gain="1.0" pan="0.0" colorindex="0">
+		<waveclip offset="0.00000000" colorindex="0">
+			<sequence maxsamples="262144" sampleformat="262159" numsamples="890462">
+				<waveblock start="0">
+					<simpleblockfile filename="e0808ffd.au" len="262144" min="-0.10488" max="0.105402" rms="0.012405"/>
+				</waveblock>
+				<waveblock start="262144">
+					<simpleblockfile filename="e0808b46.au" len="262144" min="-0.123737" max="0.119857" rms="0.019844"/>
+				</waveblock>
+				<waveblock start="524288">
+					<simpleblockfile filename="e0808c94.au" len="262144" min="-0.123755" max="0.126636" rms="0.017781"/>
+				</waveblock>
+				<waveblock start="786432">
+					<simpleblockfile filename="e0808218.au" len="104030" min="-0.119105" max="0.123027" rms="0.015985"/>
+				</waveblock>
+			</sequence>
+			<envelope numpoints="0"/>
+		</waveclip>
+	</wavetrack>
+</project>

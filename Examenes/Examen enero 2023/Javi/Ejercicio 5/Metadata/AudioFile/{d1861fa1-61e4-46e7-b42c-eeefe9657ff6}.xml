@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d1861fa1-61e4-46e7-b42c-eeefe9657ff6}">
+		<property name="assetPath">
+			<value>traqueteo_end_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.685873015873016</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{e5828a25-de87-43b1-851a-67b69b5ff48c}</destination>
+		</relationship>
+	</object>
+</objects>

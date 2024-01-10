@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{85dca7ab-2b7b-4505-abd9-75ca4e0471c9}">
+		<property name="assetPath">
+			<value>pajaros_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>3.3087755102040814</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{86f98ec6-6b28-43c9-b406-a95d8c54d7b9}</destination>
+		</relationship>
+	</object>
+</objects>

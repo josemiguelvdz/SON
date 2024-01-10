@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{18212c6d-f4d6-4493-83e1-c77b33fc3bc4}">
+		<property name="name">
+			<value>densidad</value>
+		</property>
+		<relationship name="folder">
+			<destination>{6a9a2530-b11a-412a-9711-42a2774208c8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{cf489e5d-6d13-47d6-af0d-9795419731f9}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{cf489e5d-6d13-47d6-af0d-9795419731f9}">
+		<property name="initialValue">
+			<value>0.5</value>
+		</property>
+	</object>
+</objects>
